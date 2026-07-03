@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>暮らし台帳 — 登録先・住所変更・暮らしの情報を一元管理</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+    }
+    .hero {
+      background: linear-gradient(135deg, #d97757 0%, #b85c38 100%);
+      padding: 80px 24px 64px;
+      text-align: center;
+      color: #fff;
+    }
+    .hero .tagline-small { font-size: 14px; font-weight: 700; letter-spacing: 2px; opacity: 0.85; margin-bottom: 16px; }
+    .hero h1 { font-size: 48px; font-weight: 900; margin-bottom: 16px; }
+    .hero p { font-size: 19px; opacity: 0.92; margin-bottom: 32px; line-height: 1.6; }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .features {
+      max-width: 820px;
+      margin: 64px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .features-title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 800;
+      margin: 56px 0 40px;
+      color: #1a1a1a;
+    }
+    .feature { background: #f5f6fa; border-radius: 16px; padding: 24px; }
+    .feature .icon { font-size: 36px; margin-bottom: 12px; }
+    .feature h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; color: #1a1a1a; }
+    .feature p { font-size: 13px; color: #555; line-height: 1.65; }
+    .privacy-section {
+      background: #fafaf8;
+      border-top: 1px solid #e8e3dc;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    .privacy-section p { font-size: 14px; color: #888; line-height: 1.8; }
+    .privacy-section a { color: #d97757; text-decoration: none; font-weight: 600; }
+    .section-divider { max-width: 820px; margin: 0 auto; }
+    .privacy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fdf2ed;
+      border: 1px solid #d97757;
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #b85c38;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <p class="tagline-small">暮らし台帳</p>
+    <h1>暮らしの情報を、<br>ひとつの台帳に。</h1>
+    <p>登録先サービス・連絡先・カード・住所を一元管理。<br>引越し時の住所変更漏れをゼロに。</p>
+    <div class="badge">📱 iOS App Store にて提供中</div>
+  </div>
+
+  <p class="features-title">主な機能</p>
+
+  <div class="features">
+    <div class="feature">
+      <div class="icon">📋</div>
+      <h3>サービス登録管理</h3>
+      <p>通販・銀行・公共料金・サブスクなどをカテゴリ別に一覧管理。担当者・連絡先も各サービスカードに記録できます。</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🏠</div>
+      <h3>引越し住所変更サポート</h3>
+      <p>引越しモードをONにするだけで住所変更チェックリストに変身。完了・未完了・不要で進捗を管理。</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📇</div>
+      <h3>名刺スキャン（OCR）</h3>
+      <p>名刺を撮影するだけで担当者の電話番号・メールアドレスを自動読み取り。端末内処理で安全。</p>
+    </div>
+    <div class="feature">
+      <div class="icon">💳</div>
+      <h3>カード管理</h3>
+      <p>クレジットカード情報（名称・ブランド・下4桁・有効期限）を安全に保存。サービスとの紐付けも可能。</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📍</div>
+      <h3>複数住所プロファイル</h3>
+      <p>現住所・旧住所・本籍地など複数の住所を登録してサービスに紐付け。引越し後の一括更新も。</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🔒</div>
+      <h3>端末内保存・完全プライベート</h3>
+      <p>すべてのデータは端末内にのみ保存。Face ID/Touch IDによるアプリロック機能付き。</p>
+    </div>
+  </div>
+
+  <div class="privacy-section">
+    <div class="section-divider">
+      <div class="privacy-badge">🔐 プライバシー重視設計</div>
+      <p>暮らし台帳はすべてのデータをお使いの端末内にのみ保存します。<br>個人情報を外部サーバーに送信することはありません。</p>
+      <p style="margin-top: 20px;">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <span style="margin: 0 12px; color: #ddd;">|</span>
+        <a href="terms.html">利用規約</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
